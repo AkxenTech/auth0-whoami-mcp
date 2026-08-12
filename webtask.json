@@ -1,8 +1,16 @@
 {
+  "title": "Auth0 Who Am I MCP",
   "name": "auth0-whoami-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "author": "AkxenTech",
+  "repository": "https://github.com/AkxenTech/auth0-whoami-mcp",
+  "keywords": ["auth0", "extension", "mcp"],
+  "useHashName": false,
+  "description": "An Auth0 Custom Extension MCP server that reports the authenticated caller.",
   "type": "application",
   "runtime": "node22",
+  "category": "end_user",
+  "initialUrlPath": "/",
   "auth0": {
     "createClient": false
   },
