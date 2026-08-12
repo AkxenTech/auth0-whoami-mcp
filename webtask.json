@@ -1,0 +1,23 @@
+{
+  "name": "auth0-whoami-mcp",
+  "version": "1.0.0",
+  "type": "application",
+  "runtime": "node22",
+  "auth0": {
+    "createClient": false
+  },
+  "secrets": {
+    "AUTH0_TENANT_ORIGIN": {
+      "description": "Absolute Auth0 tenant origin, for example https://tenant.us.auth0.com.",
+      "required": true
+    },
+    "MCP_PUBLIC_URL": {
+      "description": "Exact public HTTPS URL of this extension's /mcp endpoint. This is also the required Auth0 access-token audience.",
+      "required": true
+    },
+    "MCP_RESOURCE_METADATA_URL": {
+      "description": "Optional reachable protected-resource metadata URL. Defaults to the extension-scoped /.well-known/oauth-protected-resource/mcp path.",
+      "required": false
+    }
+  }
+}
